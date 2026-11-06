@@ -100,9 +100,8 @@ released in three milestone tranches. Full breakdown:
 
 - **Founder — [@oumar9018-cmd](https://github.com/oumar9018-cmd):**
   protocol design, architecture, and every decision in this repository.
-- **Engineering — Muse (Meta's AI agent):** the TLA+ model (A19), the
-  verification runs, the evidence package, the prototype, and this
-  repository — built with the founder, under his direction.
+  The spec, the TLA+ model (A19), the verification runs, the evidence
+  package and the prototype were all built under his direction and review.
 
 The team is small by design at this stage: the funding buys compute and
 an independent review, not headcount. Co-builders are welcome once the
