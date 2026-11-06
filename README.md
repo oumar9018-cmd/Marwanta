@@ -104,8 +104,9 @@ released in three milestone tranches. Full breakdown:
   package and the prototype were all built under his direction and review.
 
 The team is small by design at this stage: the funding buys compute and
-an independent review, not headcount. Co-builders are welcome once the
-verification milestone is done — see `ROADMAP.md`.
+an independent review, not headcount. Hiring protocol engineers is part
+of the mainnet plan and starts after the verification milestone — see
+`ROADMAP.md`. Co-builders are welcome once that milestone is done.
 
 ## Contact
 
