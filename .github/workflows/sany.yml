@@ -8,10 +8,12 @@ on:
     paths:
       - "model/Marwanta.tla"
       - "model/MarwantaDiag.tla"
+      - ".github/workflows/sany.yml"
   pull_request:
     paths:
       - "model/Marwanta.tla"
       - "model/MarwantaDiag.tla"
+  workflow_dispatch:
 
 jobs:
   sany:
