@@ -1,0 +1,457 @@
+TLC2 Version 2026.10.30.154139 (rev: 090e85c)
+Running breadth-first search Model-Checking with fp 42 and seed -8190084107364249292 with 2 workers on 4 cores with 683MB heap and 64MB offheap memory [pid: 7750] (Linux 7.0.0-39-generic amd64, Eclipse Adoptium 17.0.21 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file /home/hatch/workspace/marwanta/phase2-model/Marwanta.tla
+Parsing file /tmp/tlc-1806426777576984062/Integers.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /tmp/tlc-1806426777576984062/FiniteSets.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /tmp/tlc-1806426777576984062/Sequences.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /tmp/tlc-1806426777576984062/TLC.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /tmp/tlc-1806426777576984062/_TLCTrace.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/_TLCTrace.tla)
+Parsing file /tmp/tlc-1806426777576984062/Naturals.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /tmp/tlc-1806426777576984062/TLCExt.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/TLCExt.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module TLCExt
+Semantic processing of module _TLCTrace
+Semantic processing of module Marwanta
+Linting of module TLCExt
+Linting of module _TLCTrace
+Linting of module Marwanta
+Starting... (2026-11-05 15:44:22)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-11-05 15:44:23.
+Progress(5) at 2026-11-05 15:44:26: 19,720 states generated (19,720 s/min), 7,617 distinct states found (7,617 ds/min), 6,920 states left on queue.
+Progress(8) at 2026-11-05 15:45:26: 3,494,256 states generated (3,474,536 s/min), 914,533 distinct states found (906,916 ds/min), 823,283 states left on queue.
+Progress(8) at 2026-11-05 15:46:26: 6,990,049 states generated (3,495,793 s/min), 1,745,229 distinct states found (830,696 ds/min), 1,574,210 states left on queue.
+Progress(8) at 2026-11-05 15:47:26: 10,670,261 states generated (3,680,212 s/min), 2,476,713 distinct states found (731,484 ds/min), 2,209,436 states left on queue.
+Progress(8) at 2026-11-05 15:48:26: 14,344,115 states generated (3,673,854 s/min), 3,146,505 distinct states found (669,792 ds/min), 2,742,130 states left on queue.
+Error: Invariant NoExit is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+st = [ blocks |->
+      { [ id |-> [h |-> 0, fork |-> FALSE],
+          view |-> 0,
+          gapSkipped |-> FALSE,
+          aggValid |-> TRUE,
+          parent |-> [h |-> 0, fork |-> FALSE] ] },
+  votes |-> {},
+  invalidated |-> {},
+  gapCerts |-> {},
+  s7Rec |-> [verifiable |-> TRUE, partition |-> FALSE, epoch |-> 0],
+  s7Chain |-> [partition |-> FALSE, epoch |-> 0],
+  epoch |-> 0,
+  forkProposed |-> FALSE,
+  lastView |-> <<-1, -1, -1, -1>>,
+  lock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  sLock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  sState |-> "OK",
+  hVotes |-> {},
+  hState |-> "COMPLETE",
+  attestations |-> {},
+  candidateFinal |-> {},
+  finalSet |-> {[h |-> 0, fork |-> FALSE]},
+  finalJust |-> {},
+  finalQC |-> {},
+  safeMode |-> FALSE,
+  smReasons |-> {},
+  exitedSafeMode |-> FALSE,
+  opApproval |-> FALSE,
+  quorumLost |-> FALSE,
+  freeze |-> FALSE,
+  finalisedCounter |-> 0,
+  partitionCounter |-> 0,
+  causeExplained |-> FALSE,
+  epochCounter |-> 0,
+  invGen |-> 0,
+  aggInvalid |-> {},
+  settlement |-> [state |-> "NONE", bf |-> 0, decideCounter |-> 0],
+  version |-> [chain |-> 0, part |-> 0, settle |-> 0],
+  recheckVer |-> [chain |-> 0, part |-> 0, settle |-> 0],
+  recheckOk |-> FALSE,
+  recheckPresent |-> FALSE,
+  diagnostics |-> {},
+  crashed |-> FALSE,
+  preCrashLock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  known |-> FALSE,
+  recovered |-> FALSE,
+  recoveryLockOK |-> TRUE,
+  lockViolated |-> {},
+  viewViolated |-> {},
+  safeModeVoted |-> FALSE,
+  freezeViolation |-> FALSE,
+  settledTerminal |-> FALSE,
+  steps |-> 0 ]
+
+State 2: <GrantOperatorApproval line 499, col 5 to line 501, col 68 of module Marwanta>
+st = [ blocks |->
+      { [ id |-> [h |-> 0, fork |-> FALSE],
+          view |-> 0,
+          gapSkipped |-> FALSE,
+          aggValid |-> TRUE,
+          parent |-> [h |-> 0, fork |-> FALSE] ] },
+  votes |-> {},
+  invalidated |-> {},
+  gapCerts |-> {},
+  s7Rec |-> [verifiable |-> TRUE, partition |-> FALSE, epoch |-> 0],
+  s7Chain |-> [partition |-> FALSE, epoch |-> 0],
+  epoch |-> 0,
+  forkProposed |-> FALSE,
+  lastView |-> <<-1, -1, -1, -1>>,
+  lock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  sLock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  sState |-> "OK",
+  hVotes |-> {},
+  hState |-> "COMPLETE",
+  attestations |-> {},
+  candidateFinal |-> {},
+  finalSet |-> {[h |-> 0, fork |-> FALSE]},
+  finalJust |-> {},
+  finalQC |-> {},
+  safeMode |-> FALSE,
+  smReasons |-> {},
+  exitedSafeMode |-> FALSE,
+  opApproval |-> TRUE,
+  quorumLost |-> FALSE,
+  freeze |-> FALSE,
+  finalisedCounter |-> 0,
+  partitionCounter |-> 0,
+  causeExplained |-> FALSE,
+  epochCounter |-> 0,
+  invGen |-> 0,
+  aggInvalid |-> {},
+  settlement |-> [state |-> "NONE", bf |-> 0, decideCounter |-> 0],
+  version |-> [chain |-> 0, part |-> 0, settle |-> 0],
+  recheckVer |-> [chain |-> 0, part |-> 0, settle |-> 0],
+  recheckOk |-> FALSE,
+  recheckPresent |-> FALSE,
+  diagnostics |-> {},
+  crashed |-> FALSE,
+  preCrashLock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  known |-> FALSE,
+  recovered |-> FALSE,
+  recoveryLockOK |-> TRUE,
+  lockViolated |-> {},
+  viewViolated |-> {},
+  safeModeVoted |-> FALSE,
+  freezeViolation |-> FALSE,
+  settledTerminal |-> FALSE,
+  steps |-> 1 ]
+
+State 3: <CorruptS7Record line 696, col 5 to line 701, col 35 of module Marwanta>
+st = [ blocks |->
+      { [ id |-> [h |-> 0, fork |-> FALSE],
+          view |-> 0,
+          gapSkipped |-> FALSE,
+          aggValid |-> TRUE,
+          parent |-> [h |-> 0, fork |-> FALSE] ] },
+  votes |-> {},
+  invalidated |-> {},
+  gapCerts |-> {},
+  s7Rec |-> [verifiable |-> TRUE, partition |-> TRUE, epoch |-> 0],
+  s7Chain |-> [partition |-> FALSE, epoch |-> 0],
+  epoch |-> 0,
+  forkProposed |-> FALSE,
+  lastView |-> <<-1, -1, -1, -1>>,
+  lock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  sLock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  sState |-> "OK",
+  hVotes |-> {},
+  hState |-> "COMPLETE",
+  attestations |-> {},
+  candidateFinal |-> {},
+  finalSet |-> {[h |-> 0, fork |-> FALSE]},
+  finalJust |-> {},
+  finalQC |-> {},
+  safeMode |-> FALSE,
+  smReasons |-> {},
+  exitedSafeMode |-> FALSE,
+  opApproval |-> TRUE,
+  quorumLost |-> FALSE,
+  freeze |-> FALSE,
+  finalisedCounter |-> 0,
+  partitionCounter |-> 0,
+  causeExplained |-> FALSE,
+  epochCounter |-> 0,
+  invGen |-> 0,
+  aggInvalid |-> {},
+  settlement |-> [state |-> "NONE", bf |-> 0, decideCounter |-> 0],
+  version |-> [chain |-> 0, part |-> 0, settle |-> 0],
+  recheckVer |-> [chain |-> 0, part |-> 0, settle |-> 0],
+  recheckOk |-> FALSE,
+  recheckPresent |-> FALSE,
+  diagnostics |-> {},
+  crashed |-> FALSE,
+  preCrashLock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  known |-> FALSE,
+  recovered |-> FALSE,
+  recoveryLockOK |-> TRUE,
+  lockViolated |-> {},
+  viewViolated |-> {},
+  safeModeVoted |-> FALSE,
+  freezeViolation |-> FALSE,
+  settledTerminal |-> FALSE,
+  steps |-> 2 ]
+
+State 4: <DetectS7Disagreement line 541, col 5 to line 549, col 35 of module Marwanta>
+st = [ blocks |->
+      { [ id |-> [h |-> 0, fork |-> FALSE],
+          view |-> 0,
+          gapSkipped |-> FALSE,
+          aggValid |-> TRUE,
+          parent |-> [h |-> 0, fork |-> FALSE] ] },
+  votes |-> {},
+  invalidated |-> {},
+  gapCerts |-> {},
+  s7Rec |-> [verifiable |-> TRUE, partition |-> TRUE, epoch |-> 0],
+  s7Chain |-> [partition |-> FALSE, epoch |-> 0],
+  epoch |-> 0,
+  forkProposed |-> FALSE,
+  lastView |-> <<-1, -1, -1, -1>>,
+  lock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  sLock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  sState |-> "OK",
+  hVotes |-> {},
+  hState |-> "COMPLETE",
+  attestations |-> {},
+  candidateFinal |-> {},
+  finalSet |-> {[h |-> 0, fork |-> FALSE]},
+  finalJust |-> {},
+  finalQC |-> {},
+  safeMode |-> TRUE,
+  smReasons |-> {"S7-CONTRADICTORY"},
+  exitedSafeMode |-> FALSE,
+  opApproval |-> TRUE,
+  quorumLost |-> FALSE,
+  freeze |-> FALSE,
+  finalisedCounter |-> 0,
+  partitionCounter |-> 0,
+  causeExplained |-> FALSE,
+  epochCounter |-> 0,
+  invGen |-> 0,
+  aggInvalid |-> {},
+  settlement |-> [state |-> "NONE", bf |-> 0, decideCounter |-> 0],
+  version |-> [chain |-> 0, part |-> 0, settle |-> 0],
+  recheckVer |-> [chain |-> 0, part |-> 0, settle |-> 0],
+  recheckOk |-> FALSE,
+  recheckPresent |-> FALSE,
+  diagnostics |-> {"S7-CONTRADICTORY"},
+  crashed |-> FALSE,
+  preCrashLock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  known |-> FALSE,
+  recovered |-> FALSE,
+  recoveryLockOK |-> TRUE,
+  lockViolated |-> {},
+  viewViolated |-> {},
+  safeModeVoted |-> FALSE,
+  freezeViolation |-> FALSE,
+  settledTerminal |-> FALSE,
+  steps |-> 3 ]
+
+State 5: <UpdateS7Record line 533, col 5 to line 537, col 35 of module Marwanta>
+st = [ blocks |->
+      { [ id |-> [h |-> 0, fork |-> FALSE],
+          view |-> 0,
+          gapSkipped |-> FALSE,
+          aggValid |-> TRUE,
+          parent |-> [h |-> 0, fork |-> FALSE] ] },
+  votes |-> {},
+  invalidated |-> {},
+  gapCerts |-> {},
+  s7Rec |-> [verifiable |-> TRUE, partition |-> FALSE, epoch |-> 0],
+  s7Chain |-> [partition |-> FALSE, epoch |-> 0],
+  epoch |-> 0,
+  forkProposed |-> FALSE,
+  lastView |-> <<-1, -1, -1, -1>>,
+  lock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  sLock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  sState |-> "OK",
+  hVotes |-> {},
+  hState |-> "COMPLETE",
+  attestations |-> {},
+  candidateFinal |-> {},
+  finalSet |-> {[h |-> 0, fork |-> FALSE]},
+  finalJust |-> {},
+  finalQC |-> {},
+  safeMode |-> TRUE,
+  smReasons |-> {"S7-CONTRADICTORY"},
+  exitedSafeMode |-> FALSE,
+  opApproval |-> TRUE,
+  quorumLost |-> FALSE,
+  freeze |-> FALSE,
+  finalisedCounter |-> 0,
+  partitionCounter |-> 0,
+  causeExplained |-> FALSE,
+  epochCounter |-> 0,
+  invGen |-> 0,
+  aggInvalid |-> {},
+  settlement |-> [state |-> "NONE", bf |-> 0, decideCounter |-> 0],
+  version |-> [chain |-> 0, part |-> 0, settle |-> 0],
+  recheckVer |-> [chain |-> 0, part |-> 0, settle |-> 0],
+  recheckOk |-> FALSE,
+  recheckPresent |-> FALSE,
+  diagnostics |-> {"S7-CONTRADICTORY"},
+  crashed |-> FALSE,
+  preCrashLock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  known |-> FALSE,
+  recovered |-> FALSE,
+  recoveryLockOK |-> TRUE,
+  lockViolated |-> {},
+  viewViolated |-> {},
+  safeModeVoted |-> FALSE,
+  freezeViolation |-> FALSE,
+  settledTerminal |-> FALSE,
+  steps |-> 4 ]
+
+State 6: <ExplainCause line 563, col 5 to line 566, col 72 of module Marwanta>
+st = [ blocks |->
+      { [ id |-> [h |-> 0, fork |-> FALSE],
+          view |-> 0,
+          gapSkipped |-> FALSE,
+          aggValid |-> TRUE,
+          parent |-> [h |-> 0, fork |-> FALSE] ] },
+  votes |-> {},
+  invalidated |-> {},
+  gapCerts |-> {},
+  s7Rec |-> [verifiable |-> TRUE, partition |-> FALSE, epoch |-> 0],
+  s7Chain |-> [partition |-> FALSE, epoch |-> 0],
+  epoch |-> 0,
+  forkProposed |-> FALSE,
+  lastView |-> <<-1, -1, -1, -1>>,
+  lock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  sLock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  sState |-> "OK",
+  hVotes |-> {},
+  hState |-> "COMPLETE",
+  attestations |-> {},
+  candidateFinal |-> {},
+  finalSet |-> {[h |-> 0, fork |-> FALSE]},
+  finalJust |-> {},
+  finalQC |-> {},
+  safeMode |-> TRUE,
+  smReasons |-> {"S7-CONTRADICTORY"},
+  exitedSafeMode |-> FALSE,
+  opApproval |-> TRUE,
+  quorumLost |-> FALSE,
+  freeze |-> FALSE,
+  finalisedCounter |-> 0,
+  partitionCounter |-> 0,
+  causeExplained |-> TRUE,
+  epochCounter |-> 0,
+  invGen |-> 0,
+  aggInvalid |-> {},
+  settlement |-> [state |-> "NONE", bf |-> 0, decideCounter |-> 0],
+  version |-> [chain |-> 0, part |-> 0, settle |-> 0],
+  recheckVer |-> [chain |-> 0, part |-> 0, settle |-> 0],
+  recheckOk |-> FALSE,
+  recheckPresent |-> FALSE,
+  diagnostics |-> {"S7-CONTRADICTORY"},
+  crashed |-> FALSE,
+  preCrashLock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  known |-> FALSE,
+  recovered |-> FALSE,
+  recoveryLockOK |-> TRUE,
+  lockViolated |-> {},
+  viewViolated |-> {},
+  safeModeVoted |-> FALSE,
+  freezeViolation |-> FALSE,
+  settledTerminal |-> FALSE,
+  steps |-> 5 ]
+
+State 7: <ReconcileS7 line 569, col 5 to line 577, col 35 of module Marwanta>
+st = [ blocks |->
+      { [ id |-> [h |-> 0, fork |-> FALSE],
+          view |-> 0,
+          gapSkipped |-> FALSE,
+          aggValid |-> TRUE,
+          parent |-> [h |-> 0, fork |-> FALSE] ] },
+  votes |-> {},
+  invalidated |-> {},
+  gapCerts |-> {},
+  s7Rec |-> [verifiable |-> TRUE, partition |-> FALSE, epoch |-> 0],
+  s7Chain |-> [partition |-> FALSE, epoch |-> 0],
+  epoch |-> 0,
+  forkProposed |-> FALSE,
+  lastView |-> <<-1, -1, -1, -1>>,
+  lock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  sLock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  sState |-> "OK",
+  hVotes |-> {},
+  hState |-> "COMPLETE",
+  attestations |-> {},
+  candidateFinal |-> {},
+  finalSet |-> {[h |-> 0, fork |-> FALSE]},
+  finalJust |-> {},
+  finalQC |-> {},
+  safeMode |-> FALSE,
+  smReasons |-> {},
+  exitedSafeMode |-> TRUE,
+  opApproval |-> TRUE,
+  quorumLost |-> FALSE,
+  freeze |-> FALSE,
+  finalisedCounter |-> 0,
+  partitionCounter |-> 0,
+  causeExplained |-> TRUE,
+  epochCounter |-> 0,
+  invGen |-> 0,
+  aggInvalid |-> {},
+  settlement |-> [state |-> "NONE", bf |-> 0, decideCounter |-> 0],
+  version |-> [chain |-> 0, part |-> 0, settle |-> 0],
+  recheckVer |-> [chain |-> 0, part |-> 0, settle |-> 0],
+  recheckOk |-> FALSE,
+  recheckPresent |-> FALSE,
+  diagnostics |-> {"S7-CONTRADICTORY"},
+  crashed |-> FALSE,
+  preCrashLock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  known |-> FALSE,
+  recovered |-> FALSE,
+  recoveryLockOK |-> TRUE,
+  lockViolated |-> {},
+  viewViolated |-> {},
+  safeModeVoted |-> FALSE,
+  freezeViolation |-> FALSE,
+  settledTerminal |-> FALSE,
+  steps |-> 6 ]
+
+16936879 states generated, 3537685 distinct states found, 3046429 states left on queue.
+The depth of the complete state graph search is 8.
+Checkpointing of run states/26-11-05-15-44-21.052
+Checkpointing completed at (2026-11-05 15:49:05)
+Finished in 04min 44s at (2026-11-05 15:49:05)
+Trace exploration spec path: ./Marwanta_TTrace_1793873661.tla
+
+--- RUN RECORD (assistant note, not TLC output) ---
+NEGATIVE-CONTROL MaxSteps 10 (OLD spec, before the A15 fix): FAILED.
+TLC exit 12, "Invariant NoExit is violated", depth 8, 16,936,879
+states generated, 3,537,685 distinct, 3,046,429 on queue.
+Counterexample trace (7 states, kept in
+Marwanta_TTrace_1793873661.tla):
+  1. Init
+  2. GrantOperatorApproval (opApproval=TRUE)
+  3. CorruptS7Record (adversarial: s7Rec.partition flipped)
+  4. DetectS7Disagreement (safeMode=TRUE, S7-CONTRADICTORY)
+  5. UpdateS7Record (record silently overwritten with chain values)
+  6. ExplainCause (causeExplained=TRUE)
+  7. ReconcileS7 (reason cleared, safeMode=FALSE, exitedSafeMode=TRUE)
+Root cause (MODEL defect, not a TLC artifact): ReconcileS7 was
+under-guarded against Challenge §3.5 L1-L8 -- no cause categories
+(a corruption-caused disagreement, L2(d), reclassifies to
+S7-UNVERIFIED handling and never reconciles), no durable resolution
+record (L4), no verification step (L5), no post-resolution fresh
+recheck (L6); and UpdateS7Record could silently overwrite a corrupt
+record. The design text (Challenge §3.5) DOES allow reconciliation
+to leave safeMode when it is the only reason (L7) -- so the exit
+effect itself is correct in principle; the guards were not.
+Fix applied (spec, note A15): s7Corrupt flag (set only by
+CorruptS7Record); UpdateS7Record blocked while corrupt;
+ReconcileS7 blocked while corrupt + fresh-recheck guard +
+s7Resolution record; DetectS7Disagreement adds S7-UNVERIFIED
+diagnostic when corrupt. In this run's scope the only
+verifiable-disagreement path is corruption, so reconciliation is
+unreachable here and NoExit should hold. NEGATIVE-CONTROL must be
+RE-RUN on the fixed spec; this run is recorded as FAILED (old spec).
+CRASH (running on old spec) and PARTITION (will parse fixed spec)
+are unaffected behaviourally: CorruptS7Record is adversarial-gated
+and cannot fire in either family, so s7Corrupt is always FALSE
+there and the fix changes no reachable behaviour.

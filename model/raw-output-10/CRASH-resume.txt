@@ -1,0 +1,127 @@
+TLC2 Version 2026.10.30.154139 (rev: 090e85c)
+Running breadth-first search Model-Checking with fp 66 and seed 9135189820596468347 with 2 workers on 4 cores with 683MB heap and 64MB offheap memory [pid: 1779] (Linux 7.0.0-39-generic amd64, Eclipse Adoptium 17.0.21 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file /home/hatch/workspace/marwanta/phase2-model/Marwanta.tla
+Parsing file /tmp/tlc-6593797573367785260/Integers.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /tmp/tlc-6593797573367785260/FiniteSets.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /tmp/tlc-6593797573367785260/Sequences.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /tmp/tlc-6593797573367785260/TLC.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /tmp/tlc-6593797573367785260/_TLCTrace.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/_TLCTrace.tla)
+Parsing file /tmp/tlc-6593797573367785260/Naturals.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /tmp/tlc-6593797573367785260/TLCExt.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/TLCExt.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module TLCExt
+Semantic processing of module _TLCTrace
+Semantic processing of module Marwanta
+Linting of module TLCExt
+Linting of module _TLCTrace
+Linting of module Marwanta
+Starting... (2026-11-05 16:32:39)
+Starting recovery from checkpoint states/26-11-05-15-49-06.422/
+Recovery completed. 23442274 states examined. 19013949 states on queue.
+Error: TLC threw an unexpected exception.
+This was probably caused by an error in the spec or model.
+See the User Output or TLC Console for clues to what happened.
+The exception was a java.lang.RuntimeException
+: Attempted to select nonexistent field "s7Corrupt" from the record
+[ blocks |->
+      { [ id |-> [h |-> 0, fork |-> FALSE],
+          view |-> 0,
+          gapSkipped |-> FALSE,
+          aggValid |-> TRUE,
+          parent |-> [h |-> 0, fork |-> FALSE] ],
+        [ id |-> [h |-> 1, fork |-> FALSE],
+          view |-> 1,
+          gapSkipped |-> FALSE,
+          aggValid |-> TRUE,
+          parent |-> [h |-> 0, fork |-> FALSE] ],
+        [ id |-> [h |-> 2, fork |-> FALSE],
+          view |-> 2,
+          gapSkipped |-> FALSE,
+          aggValid |-> TRUE,
+          parent |-> [h |-> 1, fork |-> FALSE] ],
+        [ id |-> [h |-> 3, fork |-> FALSE],
+          view |-> 3,
+          gapSkipped |-> FALSE,
+          aggValid |-> TRUE,
+          parent |-> [h |-> 2, fork |-> FALSE] ],
+        [ id |-> [h |-> 3, fork |-> TRUE],
+          view |-> 4,
+          gapSkipped |-> FALSE,
+          aggValid |-> TRUE,
+          parent |-> [h |-> 2, fork |-> FALSE] ] },
+  votes |->
+      { [ v |-> 3,
+          b |-> [h |-> 3, fork |-> FALSE],
+          replay |-> TRUE,
+          da |-> TRUE,
+          stale |-> FALSE ] },
+  invalidated |-> {[h |-> 1, fork |-> FALSE], [h |-> 3, fork |-> FALSE]},
+  gapCerts |-> {},
+  s7Rec |-> [verifiable |-> TRUE, partition |-> FALSE, epoch |-> 0],
+  s7Chain |-> [partition |-> FALSE, epoch |-> 0],
+  epoch |-> 0,
+  forkProposed |-> TRUE,
+  lastView |-> <<-1, -1, 3, -1>>,
+  lock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  sLock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  sState |-> "OK",
+  hVotes |-> {},
+  hState |-> "COMPLETE",
+  attestations |-> {},
+  candidateFinal |-> {},
+  finalSet |-> {[h |-> 0, fork |-> FALSE]},
+  finalJust |-> {},
+  finalQC |-> {},
+  safeMode |-> FALSE,
+  smReasons |-> {},
+  exitedSafeMode |-> FALSE,
+  opApproval |-> TRUE,
+  quorumLost |-> FALSE,
+  freeze |-> FALSE,
+  finalisedCounter |-> 0,
+  partitionCounter |-> 0,
+  causeExplained |-> FALSE,
+  epochCounter |-> 0,
+  invGen |-> 2,
+  aggInvalid |-> {},
+  settlement |-> [state |-> "NONE", bf |-> 0, decideCounter |-> 0],
+  version |-> [chain |-> 0, part |-> 0, settle |-> 2],
+  recheckVer |-> [chain |-> 0, part |-> 0, settle |-> 2],
+  recheckOk |-> TRUE,
+  recheckPresent |-> TRUE,
+  diagnostics |-> {},
+  crashed |-> FALSE,
+  preCrashLock |-> [id |-> [h |-> -1, fork |-> FALSE], v |-> -1],
+  known |-> FALSE,
+  recovered |-> FALSE,
+  recoveryLockOK |-> TRUE,
+  lockViolated |-> {},
+  viewViolated |-> {},
+  safeModeVoted |-> FALSE,
+  freezeViolation |-> FALSE,
+  settledTerminal |-> FALSE,
+  steps |-> 9 ]
+line 554, col 9 to line 554, col 20 of module Marwanta
+Error: TLC threw an unexpected exception.
+This was probably caused by an error in the spec or model.
+See the User Output or TLC Console for clues to what happened.
+The exception was a java.lang.NullPointerException
+: Cannot read field "state" because "sinfo" is null
+Error: The error occurred when TLC was evaluating the nested
+expressions at the following positions:
+0. Line 553, column 5 to line 558, column 35 in Marwanta
+1. Line 553, column 8 to line 553, column 13 in Marwanta
+2. Line 254, column 11 to line 254, column 29 in Marwanta
+3. Line 554, column 8 to line 554, column 20 in Marwanta
+4. Line 554, column 9 to line 554, column 20 in Marwanta
+
+
+23442332 states generated, 23442331 distinct states found, 19014004 states left on queue.
+The depth of the complete state graph search is 11.
+Checkpointing of run states/26-11-05-15-49-06.422/
+Checkpointing completed at (2026-11-05 16:32:53)
+Finished in 15s at (2026-11-05 16:32:53)

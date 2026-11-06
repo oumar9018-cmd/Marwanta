@@ -1,0 +1,65 @@
+TLC2 Version 2026.10.30.154139 (rev: 090e85c)
+Running breadth-first search Model-Checking with fp 41 and seed -4014042907537973072 with 2 workers on 4 cores with 683MB heap and 64MB offheap memory [pid: 7222] (Linux 7.0.0-39-generic amd64, Eclipse Adoptium 17.0.21 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file /home/hatch/workspace/marwanta/phase2-model/Marwanta.tla
+Parsing file /tmp/tlc-4851196752963336112/Integers.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /tmp/tlc-4851196752963336112/FiniteSets.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /tmp/tlc-4851196752963336112/Sequences.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /tmp/tlc-4851196752963336112/TLC.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /tmp/tlc-4851196752963336112/_TLCTrace.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/_TLCTrace.tla)
+Parsing file /tmp/tlc-4851196752963336112/Naturals.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /tmp/tlc-4851196752963336112/TLCExt.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/TLCExt.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module TLCExt
+Semantic processing of module _TLCTrace
+Semantic processing of module Marwanta
+Linting of module TLCExt
+Linting of module _TLCTrace
+Linting of module Marwanta
+Starting... (2026-11-05 15:36:56)
+Starting recovery from checkpoint states/26-11-05-14-49-46.386/
+Recovery completed. 23537829 states examined. 18095945 states on queue.
+Progress(11) at 2026-11-05 15:37:12: 23,537,847 states generated (23,537,847 s/min), 23,537,847 distinct states found (23,537,847 ds/min), 17,986,662 states left on queue.
+Progress(11) at 2026-11-05 15:38:12: 23,537,866 states generated (19 s/min), 23,537,865 distinct states found (18 ds/min), 8,407,129 states left on queue.
+Progress(11) at 2026-11-05 15:39:12: 25,146,707 states generated (1,608,841 s/min), 23,991,135 distinct states found (453,270 ds/min), 8,536,488 states left on queue.
+Progress(11) at 2026-11-05 15:40:12: 27,294,963 states generated (2,148,256 s/min), 24,488,701 distinct states found (497,566 ds/min), 6,243,093 states left on queue.
+Progress(11) at 2026-11-05 15:41:12: 29,890,596 states generated (2,595,633 s/min), 25,164,336 distinct states found (675,635 ds/min), 6,037,824 states left on queue.
+Checkpointing of run states/26-11-05-14-49-46.386/
+Checkpointing completed at (2026-11-05 15:42:12)
+Progress(11) at 2026-11-05 15:42:12: 31,991,322 states generated (2,100,726 s/min), 25,694,165 distinct states found (529,829 ds/min), 3,982,549 states left on queue.
+Progress(11) at 2026-11-05 15:43:12: 34,924,987 states generated (2,933,665 s/min), 26,121,972 distinct states found (427,807 ds/min), 3,228,695 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 1.3E-5
+  based on the actual fingerprints:  val = 1.9E-5
+35047573 states generated, 26131926 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 11.
+The average outdegree of the complete state graph is 0 (minimum is 0, the maximum 31 and the 95th percentile is 0).
+Finished in 06min 41s at (2026-11-05 15:43:37)
+
+--- RUN RECORD (assistant note, not TLC output) ---
+NORMAL MaxSteps 10: PASS (complete). Resumed from checkpoint
+states/26-11-05-14-49-46.386 with -deadlock; model checking
+completed 2026-11-05 15:43:37 IST, EXIT 0, "No error has been found".
+Complete state graph: depth 11, 26,131,926 distinct states,
+0 states left on queue. Fingerprint collision probability:
+optimistic 1.3E-5, based on actual fingerprints 1.9E-5 (standard
+TLC caveat, recorded not hidden). All 16 NORMAL invariants hold:
+ISafety, IPrefix, IPathGateEdge, ILock, IGC, IQC, IP0ClaimOrder,
+IRecoveryNoWrongLock, ISafeModeNoVotes, IFreezeNoTransition,
+INoWallClockAbort, IRecoveryTermination (vacuous in bounds -- see
+fidelity matrix), IContiguousLogPrefix, NeverKnown, NoExit,
+StaleNeverFinalises.
+Q-M1 CORRECTION: the earlier 11-step non-gap IPrefix counterexample
+hypothesis is REFUTED by the edge gate -- finalising a block requires
+its parent to hold a QC (or a gap certificate), so a non-gap child
+cannot finalise while its parent lacks a QC. A REVISED hypothesis
+remains OPEN: a GAP-certified edge may let a block finalise while
+its parent lacks a QC (parent QC not required when a gap cert gates
+the edge), which would break IPrefix at ~14-15 steps -- beyond this
+bound. To be tested by a diagnostic MaxH=3 / MaxSteps=15 run after
+the family runs; it is NOT claimed either way here.

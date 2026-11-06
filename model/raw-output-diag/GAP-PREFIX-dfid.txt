@@ -1,0 +1,86 @@
+TLC2 Version 2026.10.30.154139 (rev: 090e85c)
+Running depth-first search Model-Checking with fp 49 and seed -6710558558498491069 with 1 worker on 4 cores with 4551MB heap and 64MB offheap memory [pid: 8541] (Linux 7.0.0-39-generic amd64, Eclipse Adoptium 17.0.21 64bit).
+Parsing file /home/hatch/workspace/marwanta/phase2-model/Marwanta.tla
+Parsing file /tmp/tlc-13825762930355273918/Integers.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /tmp/tlc-13825762930355273918/FiniteSets.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /tmp/tlc-13825762930355273918/Sequences.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /tmp/tlc-13825762930355273918/TLC.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /tmp/tlc-13825762930355273918/_TLCTrace.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/_TLCTrace.tla)
+Parsing file /tmp/tlc-13825762930355273918/Naturals.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /tmp/tlc-13825762930355273918/TLCExt.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/TLCExt.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module TLCExt
+Semantic processing of module _TLCTrace
+Semantic processing of module Marwanta
+Linting of module TLCExt
+Linting of module _TLCTrace
+Linting of module Marwanta
+Starting... (2026-11-06 04:37:39)
+Finished computing initial states: 1 states generated, with 1 of them distinct.
+Starting level 2: 1 states generated, 1 distinct states found.
+Starting level 3: 15 states generated, 15 distinct states found.
+Starting level 4: 221 states generated, 115 distinct states found.
+Starting level 5: 1801 states generated, 619 distinct states found.
+Starting level 6: 10507 states generated, 2725 distinct states found.
+Starting level 7: 50707 states generated, 10854 distinct states found.
+Progress: 152145 states generated, 30781 distinct states found.
+Starting level 8: 222225 states generated, 41931 distinct states found.
+Progress: 354150 states generated, 68356 distinct states found.
+Starting level 9: 938824 states generated, 162860 distinct states found.
+Progress: 1061735 states generated, 188486 distinct states found.
+Progress: 3523456 states generated, 597292 distinct states found.
+Starting level 10: 3927744 states generated, 637994 distinct states found.
+Progress: 4052638 states generated, 663529 distinct states found.
+Progress: 6438107 states generated, 1056234 distinct states found.
+Progress: 8817048 states generated, 1441461 distinct states found.
+Progress: 11204785 states generated, 1802183 distinct states found.
+Progress: 13552967 states generated, 2140608 distinct states found.
+Progress: 15824197 states generated, 2436707 distinct states found.
+Starting level 11: 16263385 states generated, 2479428 distinct states found.
+Progress: 16384988 states generated, 2505690 distinct states found.
+Progress: 18769824 states generated, 2895927 distinct states found.
+Progress: 21146423 states generated, 3280480 distinct states found.
+Progress: 23512264 states generated, 3640191 distinct states found.
+Progress: 25892180 states generated, 3989557 distinct states found.
+Progress: 28197837 states generated, 4283982 distinct states found.
+Progress: 30500626 states generated, 4642702 distinct states found.
+Progress: 32748698 states generated, 4978333 distinct states found.
+Progress: 34968827 states generated, 5320563 distinct states found.
+Progress: 37084261 states generated, 5624348 distinct states found.
+Progress: 39237341 states generated, 5975699 distinct states found.
+Progress: 41515434 states generated, 6283898 distinct states found.
+Progress: 43852585 states generated, 6611137 distinct states found.
+Progress: 46087770 states generated, 6930416 distinct states found.
+Progress: 48280468 states generated, 7228154 distinct states found.
+Progress: 50507387 states generated, 7535765 distinct states found.
+Progress: 52724145 states generated, 7832703 distinct states found.
+Progress: 54949560 states generated, 8130145 distinct states found.
+Progress: 57157980 states generated, 8415070 distinct states found.
+Progress: 59366610 states generated, 8694295 distinct states found.
+Progress: 61498033 states generated, 8938048 distinct states found.
+Progress: 63638540 states generated, 9163292 distinct states found.
+Starting level 12: 65669847 states generated, 9360509 distinct states found.
+Progress: 65780775 states generated, 9385214 distinct states found.
+Progress: 68035379 states generated, 9787537 distinct states found.
+Checkpointing of run states/26-11-06-04-37-38.150
+Checkpointing completed at (2026-11-06 05:08:37)
+Progress: 70220042 states generated, 10121298 distinct states found.
+Progress: 72419518 states generated, 10492501 distinct states found.
+Progress: 74603771 states generated, 10848952 distinct states found.
+Progress: 76842577 states generated, 11193350 distinct states found.
+Progress: 79058022 states generated, 11530987 distinct states found.
+Progress: 81238044 states generated, 11837501 distinct states found.
+Progress: 83306483 states generated, 12126179 distinct states found.
+Progress: 85354646 states generated, 12368088 distinct states found.
+Progress: 87536062 states generated, 12707921 distinct states found.
+Progress: 89672060 states generated, 13014840 distinct states found.
+Progress: 91659651 states generated, 13325733 distinct states found.
+Progress: 93720193 states generated, 13615800 distinct states found.
+Progress: 95828087 states generated, 13913562 distinct states found.
+Progress: 98016903 states generated, 14221518 distinct states found.
+Progress: 100147000 states generated, 14501741 distinct states found.
+Progress: 102324435 states generated, 14762200 distinct states found.

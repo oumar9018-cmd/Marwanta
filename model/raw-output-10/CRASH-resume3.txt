@@ -1,0 +1,72 @@
+TLC2 Version 2026.10.30.154139 (rev: 090e85c)
+Running breadth-first search Model-Checking with fp 21 and seed 8229627927944084861 with 2 workers on 4 cores with 683MB heap and 64MB offheap memory [pid: 1740] (Linux 7.0.0-39-generic amd64, Eclipse Adoptium 17.0.21 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file /home/hatch/workspace/marwanta/phase2-model/Marwanta.tla
+Parsing file /tmp/tlc-14060505952667616509/Integers.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /tmp/tlc-14060505952667616509/FiniteSets.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /tmp/tlc-14060505952667616509/Sequences.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /tmp/tlc-14060505952667616509/TLC.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /tmp/tlc-14060505952667616509/_TLCTrace.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/_TLCTrace.tla)
+Parsing file /tmp/tlc-14060505952667616509/Naturals.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /tmp/tlc-14060505952667616509/TLCExt.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/TLCExt.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module TLCExt
+Semantic processing of module _TLCTrace
+Semantic processing of module Marwanta
+Linting of module TLCExt
+Linting of module _TLCTrace
+Linting of module Marwanta
+Starting... (2026-11-05 18:31:48)
+Starting recovery from checkpoint states/26-11-05-16-33-01.064/
+Recovery completed. 65424189 states examined. 52296802 states on queue.
+Progress(11) at 2026-11-05 18:32:39: 65,432,481 states generated (65,432,481 s/min), 65,430,251 distinct states found (65,430,251 ds/min), 52,302,521 states left on queue.
+Progress(11) at 2026-11-05 18:33:39: 67,893,036 states generated (2,460,555 s/min), 66,703,844 distinct states found (1,273,593 ds/min), 53,463,573 states left on queue.
+Progress(11) at 2026-11-05 18:34:39: 70,269,225 states generated (2,376,189 s/min), 67,775,762 distinct states found (1,071,918 ds/min), 54,423,972 states left on queue.
+Progress(11) at 2026-11-05 18:35:39: 73,296,519 states generated (3,027,294 s/min), 69,097,666 distinct states found (1,321,904 ds/min), 55,605,122 states left on queue.
+Progress(11) at 2026-11-05 18:36:39: 74,290,288 states generated (993,769 s/min), 69,504,930 distinct states found (407,264 ds/min), 48,944,971 states left on queue.
+Checkpointing of run states/26-11-05-16-33-01.064/
+Checkpointing completed at (2026-11-05 18:37:40)
+Progress(11) at 2026-11-05 18:37:40: 74,290,288 states generated (0 s/min), 69,504,930 distinct states found (0 ds/min), 38,789,107 states left on queue.
+Progress(11) at 2026-11-05 18:38:40: 74,290,288 states generated (0 s/min), 69,504,930 distinct states found (0 ds/min), 28,573,788 states left on queue.
+Progress(11) at 2026-11-05 18:39:40: 74,290,288 states generated (0 s/min), 69,504,930 distinct states found (0 ds/min), 18,558,503 states left on queue.
+Progress(11) at 2026-11-05 18:40:40: 75,265,607 states generated (975,319 s/min), 69,741,020 distinct states found (236,090 ds/min), 13,124,403 states left on queue.
+Progress(11) at 2026-11-05 18:41:40: 78,645,834 states generated (3,380,227 s/min), 70,488,137 distinct states found (747,117 ds/min), 13,595,537 states left on queue.
+Checkpointing of run states/26-11-05-16-33-01.064/
+Checkpointing completed at (2026-11-05 18:42:42)
+Progress(11) at 2026-11-05 18:42:42: 82,157,362 states generated (3,511,528 s/min), 71,207,401 distinct states found (719,264 ds/min), 13,898,695 states left on queue.
+Progress(11) at 2026-11-05 18:43:42: 85,745,777 states generated (3,588,415 s/min), 71,903,153 distinct states found (695,752 ds/min), 14,379,681 states left on queue.
+Progress(11) at 2026-11-05 18:44:42: 89,369,659 states generated (3,623,882 s/min), 72,480,890 distinct states found (577,737 ds/min), 14,753,325 states left on queue.
+Progress(11) at 2026-11-05 18:45:42: 93,098,877 states generated (3,729,218 s/min), 73,074,502 distinct states found (593,612 ds/min), 15,138,393 states left on queue.
+Progress(11) at 2026-11-05 18:46:42: 96,275,231 states generated (3,176,354 s/min), 73,522,885 distinct states found (448,383 ds/min), 13,811,725 states left on queue.
+Checkpointing of run states/26-11-05-16-33-01.064/
+Checkpointing completed at (2026-11-05 18:47:42)
+Progress(11) at 2026-11-05 18:47:42: 98,957,006 states generated (2,681,775 s/min), 73,700,386 distinct states found (177,501 ds/min), 10,805,043 states left on queue.
+Progress(11) at 2026-11-05 18:48:42: 101,116,022 states generated (2,159,016 s/min), 73,837,401 distinct states found (137,015 ds/min), 6,290,346 states left on queue.
+Progress(11) at 2026-11-05 18:49:42: 104,774,219 states generated (3,658,197 s/min), 73,901,515 distinct states found (64,114 ds/min), 4,916,551 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 1.3E-4
+  based on the actual fingerprints:  val = 7.9E-5
+106402662 states generated, 73920868 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 11.
+The average outdegree of the complete state graph is 0 (minimum is 0, the maximum 31 and the 95th percentile is 0).
+Finished in 18min 52s at (2026-11-05 18:50:40)
+
+--- RUN RECORD (assistant note, not TLC output) ---
+CRASH MaxSteps 10: PASS (complete). Resumed from checkpoint
+states/26-11-05-16-33-01.064 (resume #2, after a runtime restart
+killed resume #1 at 65.9M distinct); model checking completed
+2026-11-05 18:50:40 IST, EXIT 0, "No error has been found".
+Complete state graph: depth 11, 73,920,868 distinct states,
+0 states left on queue. Fingerprint collision probability:
+optimistic 1.3E-4, based on actual fingerprints 7.9E-5 (standard
+TLC caveat, recorded not hidden). All 16 CRASH invariants hold,
+including IRecoveryNoWrongLock and ISafeModeNoVotes, under the
+unscoped NoExit (no exit path reachable in CRASH).
+History: fresh run timed out at 90 min (49.0M distinct, INCOMPLETE);
+resume #1 killed by restart at 65.9M distinct; resume #2 completed
+in 18min 52s. Total compute across the three legs ~2h20m.

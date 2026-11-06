@@ -1,0 +1,6 @@
+# TLC model-checking state: tens of GB, never committed
+states/
+*.chkpt
+# Java / editor artefacts
+*.class
+.DS_Store

@@ -1,0 +1,228 @@
+{
+  "prototype": "MARWANTA minimum local prototype (approved authorization sheet)",
+  "scope": "local only; test configuration Alternative A (test-only); test proof format; test metering cap 1000000; 4 local validators, equal test stake, QC threshold 3; test signatures (not cryptographic)",
+  "run_at_utc": "2026-11-04T16:45:18.480167+00:00",
+  "demonstrations": [
+    {
+      "demo": "D-1 deterministic replay reproduces claimed roots",
+      "expected": {
+        "votes": 4,
+        "abstentions": 0,
+        "finalised": true,
+        "A:balance": 110
+      },
+      "actual": {
+        "votes": 4,
+        "abstentions": 0,
+        "finalised": true,
+        "A:balance": 110
+      },
+      "pass": true,
+      "details": "finalise reason: finalised; replay by all 4 validators reproduced roots"
+    },
+    {
+      "demo": "D-2 DA gate + abstention on missing DA",
+      "expected": {
+        "votes": 0,
+        "abstentions": 4,
+        "reasons": [
+          "DA_MISSING"
+        ],
+        "A:balance": 100
+      },
+      "actual": {
+        "votes": 0,
+        "abstentions": 4,
+        "reasons": [
+          "DA_MISSING"
+        ],
+        "A:balance": 100
+      },
+      "pass": true,
+      "details": "missing-DA tx: no vote from any validator, state unchanged"
+    },
+    {
+      "demo": "D-3 proof does NOT substitute for replay (negative control)",
+      "expected": {
+        "votes": 0,
+        "abstentions": 4,
+        "reasons": [
+          "REPLAY_MISMATCH"
+        ],
+        "vote_always_replays": true,
+        "A:balance": 100
+      },
+      "actual": {
+        "votes": 0,
+        "abstentions": 4,
+        "reasons": [
+          "REPLAY_MISMATCH"
+        ],
+        "vote_always_replays": true,
+        "A:balance": 100
+      },
+      "pass": true,
+      "details": "present-but-wrong proof: replay mismatch abstains for all validators"
+    },
+    {
+      "demo": "D-4 fault isolation, domain crash",
+      "expected": {
+        "A_votes": 0,
+        "A_reasons": [
+          "DOMAIN_CRASHED"
+        ],
+        "B_votes": 4,
+        "B_finalised": true,
+        "A:balance": 100,
+        "B:balance": 55
+      },
+      "actual": {
+        "A_votes": 0,
+        "A_reasons": [
+          "DOMAIN_CRASHED"
+        ],
+        "B_votes": 4,
+        "B_finalised": true,
+        "A:balance": 100,
+        "B:balance": 55
+      },
+      "pass": true,
+      "details": "B finalise reason: finalised; A crashed, B unaffected"
+    },
+    {
+      "demo": "D-5 fault isolation, invalid execution / resource exhaustion",
+      "expected": {
+        "invalid_votes": 0,
+        "invalid_reasons": [
+          "REPLAY_MISMATCH"
+        ],
+        "exhaust_votes": 0,
+        "exhaust_reasons": [
+          "METERING"
+        ],
+        "B_votes": 4,
+        "B_finalised": true,
+        "A:balance": 100,
+        "B:balance": 55
+      },
+      "actual": {
+        "invalid_votes": 0,
+        "invalid_reasons": [
+          "REPLAY_MISMATCH"
+        ],
+        "exhaust_votes": 0,
+        "exhaust_reasons": [
+          "METERING"
+        ],
+        "B_votes": 4,
+        "B_finalised": true,
+        "A:balance": 100,
+        "B:balance": 55
+      },
+      "pass": true,
+      "details": "B finalise reason: finalised; A faults rejected, B unaffected"
+    },
+    {
+      "demo": "D-6 atomic cross-domain settlement",
+      "expected": {
+        "votes": 4,
+        "abstentions": 0,
+        "finalised": true,
+        "locks": [
+          [
+            "A",
+            "A:balance"
+          ],
+          [
+            "B",
+            "B:balance"
+          ]
+        ],
+        "A:balance": 90,
+        "B:balance": 60
+      },
+      "actual": {
+        "votes": 4,
+        "abstentions": 0,
+        "finalised": true,
+        "locks": [
+          [
+            "A",
+            "A:balance"
+          ],
+          [
+            "B",
+            "B:balance"
+          ]
+        ],
+        "A:balance": 90,
+        "B:balance": 60
+      },
+      "pass": true,
+      "details": "finalise reason: finalised; both legs applied or neither (finalised: both)"
+    },
+    {
+      "demo": "D-7 candidate discard on non-finalisation",
+      "expected": {
+        "candidate_votes": 4,
+        "discarded": true,
+        "settlement_discarded": true,
+        "later_finalised": true,
+        "A:balance": 100,
+        "B:balance": 55
+      },
+      "actual": {
+        "candidate_votes": 4,
+        "discarded": true,
+        "settlement_discarded": true,
+        "later_finalised": true,
+        "A:balance": 100,
+        "B:balance": 55
+      },
+      "pass": true,
+      "details": "later finalise reason: finalised; discarded candidates left no effect"
+    },
+    {
+      "demo": "D-8 local TOCTOU version-vector rejection (local only)",
+      "expected": {
+        "gate_no_interleaving": true,
+        "commit_a_finalised": true,
+        "gate_with_interleaving": false,
+        "commit_b_attempted": false,
+        "block_b_finalised": false,
+        "A:balance": 110,
+        "B:balance": 51
+      },
+      "actual": {
+        "gate_no_interleaving": true,
+        "commit_a_finalised": true,
+        "gate_with_interleaving": false,
+        "commit_b_attempted": false,
+        "block_b_finalised": false,
+        "A:balance": 110,
+        "B:balance": 51
+      },
+      "pass": true,
+      "details": "local version change between recheck and commit -> rejection; global TOCTOU NOT demonstrated (excluded)"
+    }
+  ],
+  "all_pass": true,
+  "kill_criteria_triggered": [],
+  "not_claimed": [
+    "general safety / prefix / lock / gap / C1-C4 proofs",
+    "global atomicity (UNRESOLVED at protocol level)",
+    "real replay correctness / DA recovery bound / weakest-validator feasibility",
+    "validator crash recovery / WAL / safeModeRec / S-H compatibility",
+    "S7 global/local correctness / S7 disagreement reconciliation / D-N1 exit",
+    "fork-choice / A-vs-B / B3 semantics / deadline / migration / epoch protocol decisions",
+    "stake / aggregation / slashing / section 20.5 protocol decisions",
+    "any performance number; any testnet / mainnet readiness; any token claim"
+  ],
+  "limitations": [
+    "Gap-certificate branch in chain.py is implemented but NOT exercised by D-1..D-8 (consecutive views only); gap accountability NOT claimed demonstrated.",
+    "FC-1 test fork rule is documented but NOT exercised (no fork in D traces).",
+    "Test signatures are deterministic strings, NOT cryptographic signatures.",
+    "Local lock (threading.RLock) serializes LOCAL actions only; it does NOT serialize against external/global updates.",
+    "Single-process local run; no network, no external validators, no real assets."
+  ]
+}

@@ -1,0 +1,148 @@
+TLC2 Version 2026.10.30.154139 (rev: 090e85c)
+Running breadth-first search Model-Checking with fp 0 and seed -6667836613488202470 with 2 workers on 4 cores with 683MB heap and 64MB offheap memory [pid: 1695] (Linux 7.0.0-39-generic amd64, Eclipse Adoptium 17.0.21 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file /home/hatch/workspace/marwanta/phase2-model/Marwanta.tla
+Parsing file /tmp/tlc-8547350604922807583/Integers.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /tmp/tlc-8547350604922807583/FiniteSets.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /tmp/tlc-8547350604922807583/Sequences.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /tmp/tlc-8547350604922807583/TLC.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /tmp/tlc-8547350604922807583/_TLCTrace.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/_TLCTrace.tla)
+Parsing file /tmp/tlc-8547350604922807583/Naturals.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /tmp/tlc-8547350604922807583/TLCExt.tla (jar:file:/home/hatch/workspace/marwanta/phase2-tlc-verification/tla2tools.jar!/tla2sany/StandardModules/TLCExt.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module TLCExt
+Semantic processing of module _TLCTrace
+Semantic processing of module Marwanta
+Linting of module TLCExt
+Linting of module _TLCTrace
+Linting of module Marwanta
+Starting... (2026-11-05 20:32:56)
+Starting recovery from checkpoint states/26-11-05-20-02-55.270/
+Recovery completed. 17688060 states examined. 15738696 states on queue.
+Progress(9) at 2026-11-05 20:33:09: 17,698,712 states generated (17,698,712 s/min), 17,695,671 distinct states found (17,695,671 ds/min), 15,746,035 states left on queue.
+Progress(9) at 2026-11-05 20:34:09: 20,516,268 states generated (2,817,556 s/min), 18,826,376 distinct states found (1,130,705 ds/min), 16,801,601 states left on queue.
+Progress(9) at 2026-11-05 20:35:09: 23,615,017 states generated (3,098,749 s/min), 19,831,111 distinct states found (1,004,735 ds/min), 17,724,015 states left on queue.
+Progress(9) at 2026-11-05 20:36:09: 26,913,726 states generated (3,298,709 s/min), 20,955,539 distinct states found (1,124,428 ds/min), 18,769,784 states left on queue.
+Progress(9) at 2026-11-05 20:37:09: 30,270,844 states generated (3,357,118 s/min), 22,020,939 distinct states found (1,065,400 ds/min), 19,753,413 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 20:38:09)
+Progress(9) at 2026-11-05 20:38:09: 33,627,362 states generated (3,356,518 s/min), 23,087,357 distinct states found (1,066,418 ds/min), 20,739,771 states left on queue.
+Progress(9) at 2026-11-05 20:39:09: 36,955,250 states generated (3,327,888 s/min), 24,147,168 distinct states found (1,059,811 ds/min), 21,722,706 states left on queue.
+Progress(9) at 2026-11-05 20:40:09: 40,417,555 states generated (3,462,305 s/min), 24,940,260 distinct states found (793,092 ds/min), 22,371,013 states left on queue.
+Progress(9) at 2026-11-05 20:41:09: 43,418,870 states generated (3,001,315 s/min), 25,482,693 distinct states found (542,433 ds/min), 22,787,591 states left on queue.
+Progress(9) at 2026-11-05 20:42:09: 46,849,939 states generated (3,431,069 s/min), 26,135,367 distinct states found (652,674 ds/min), 23,297,485 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 20:43:09)
+Progress(9) at 2026-11-05 20:43:09: 50,399,927 states generated (3,549,988 s/min), 26,703,923 distinct states found (568,556 ds/min), 23,734,474 states left on queue.
+Progress(9) at 2026-11-05 20:44:09: 53,832,590 states generated (3,432,663 s/min), 27,292,768 distinct states found (588,845 ds/min), 24,192,219 states left on queue.
+Progress(9) at 2026-11-05 20:45:09: 57,567,357 states generated (3,734,767 s/min), 27,835,876 distinct states found (543,108 ds/min), 24,607,439 states left on queue.
+Progress(10) at 2026-11-05 20:46:09: 61,183,068 states generated (3,615,711 s/min), 28,540,315 distinct states found (704,439 ds/min), 25,201,086 states left on queue.
+Progress(10) at 2026-11-05 20:47:09: 64,527,696 states generated (3,344,628 s/min), 29,529,496 distinct states found (989,181 ds/min), 26,141,132 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 20:48:10)
+Progress(10) at 2026-11-05 20:48:10: 68,056,930 states generated (3,529,234 s/min), 30,304,772 distinct states found (775,276 ds/min), 26,866,266 states left on queue.
+Progress(10) at 2026-11-05 20:49:10: 71,400,302 states generated (3,343,372 s/min), 31,127,408 distinct states found (822,636 ds/min), 27,632,199 states left on queue.
+Progress(10) at 2026-11-05 20:50:10: 74,754,393 states generated (3,354,091 s/min), 31,939,511 distinct states found (812,103 ds/min), 28,386,827 states left on queue.
+Progress(10) at 2026-11-05 20:51:10: 78,079,238 states generated (3,324,845 s/min), 32,733,522 distinct states found (794,011 ds/min), 29,123,763 states left on queue.
+Progress(10) at 2026-11-05 20:52:10: 81,427,232 states generated (3,347,994 s/min), 33,511,666 distinct states found (778,144 ds/min), 29,844,905 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 20:53:10)
+Progress(10) at 2026-11-05 20:53:10: 83,943,740 states generated (2,516,508 s/min), 34,050,263 distinct states found (538,597 ds/min), 30,341,319 states left on queue.
+Progress(10) at 2026-11-05 20:54:10: 87,258,461 states generated (3,314,721 s/min), 34,800,770 distinct states found (750,507 ds/min), 31,035,678 states left on queue.
+Progress(10) at 2026-11-05 20:55:10: 90,664,636 states generated (3,406,175 s/min), 35,565,848 distinct states found (765,078 ds/min), 31,745,264 states left on queue.
+Progress(10) at 2026-11-05 20:56:10: 94,057,507 states generated (3,392,871 s/min), 36,294,896 distinct states found (729,048 ds/min), 32,418,865 states left on queue.
+Progress(10) at 2026-11-05 20:57:10: 97,479,853 states generated (3,422,346 s/min), 36,967,562 distinct states found (672,666 ds/min), 33,035,374 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 20:58:10)
+Progress(10) at 2026-11-05 20:58:10: 100,689,759 states generated (3,209,906 s/min), 37,620,633 distinct states found (653,071 ds/min), 33,635,867 states left on queue.
+Progress(10) at 2026-11-05 20:59:10: 104,054,363 states generated (3,364,604 s/min), 38,295,660 distinct states found (675,027 ds/min), 34,248,660 states left on queue.
+Progress(10) at 2026-11-05 21:00:10: 107,544,745 states generated (3,490,382 s/min), 38,956,165 distinct states found (660,505 ds/min), 34,851,361 states left on queue.
+Progress(10) at 2026-11-05 21:01:10: 111,102,756 states generated (3,558,011 s/min), 39,607,246 distinct states found (651,081 ds/min), 35,440,684 states left on queue.
+Progress(10) at 2026-11-05 21:02:10: 114,648,482 states generated (3,545,726 s/min), 40,231,496 distinct states found (624,250 ds/min), 36,003,028 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 21:03:10)
+Progress(10) at 2026-11-05 21:03:10: 118,071,559 states generated (3,423,077 s/min), 40,889,567 distinct states found (658,071 ds/min), 36,592,147 states left on queue.
+Progress(10) at 2026-11-05 21:04:10: 121,581,704 states generated (3,510,145 s/min), 41,401,645 distinct states found (512,078 ds/min), 37,042,477 states left on queue.
+Progress(10) at 2026-11-05 21:05:10: 125,216,891 states generated (3,635,187 s/min), 41,909,391 distinct states found (507,746 ds/min), 37,477,675 states left on queue.
+Progress(10) at 2026-11-05 21:06:10: 128,024,699 states generated (2,807,808 s/min), 42,614,844 distinct states found (705,453 ds/min), 38,114,720 states left on queue.
+Progress(10) at 2026-11-05 21:07:10: 131,363,374 states generated (3,338,675 s/min), 43,332,584 distinct states found (717,740 ds/min), 38,757,414 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 21:08:10)
+Progress(10) at 2026-11-05 21:08:10: 134,878,339 states generated (3,514,965 s/min), 43,932,084 distinct states found (599,500 ds/min), 39,282,173 states left on queue.
+Progress(10) at 2026-11-05 21:09:10: 138,105,869 states generated (3,227,530 s/min), 44,705,249 distinct states found (773,165 ds/min), 39,978,565 states left on queue.
+Progress(10) at 2026-11-05 21:10:10: 141,493,693 states generated (3,387,824 s/min), 45,408,906 distinct states found (703,657 ds/min), 40,606,964 states left on queue.
+Progress(10) at 2026-11-05 21:11:10: 145,011,821 states generated (3,518,128 s/min), 46,128,807 distinct states found (719,901 ds/min), 41,262,189 states left on queue.
+Progress(10) at 2026-11-05 21:12:10: 148,397,252 states generated (3,385,431 s/min), 47,117,678 distinct states found (988,871 ds/min), 42,201,365 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 21:13:10)
+Progress(10) at 2026-11-05 21:13:10: 151,974,813 states generated (3,577,561 s/min), 47,866,078 distinct states found (748,400 ds/min), 42,899,343 states left on queue.
+Progress(10) at 2026-11-05 21:14:10: 155,062,762 states generated (3,087,949 s/min), 48,674,241 distinct states found (808,163 ds/min), 43,654,560 states left on queue.
+Progress(10) at 2026-11-05 21:15:10: 158,486,180 states generated (3,423,418 s/min), 49,502,552 distinct states found (828,311 ds/min), 44,424,884 states left on queue.
+Progress(10) at 2026-11-05 21:16:10: 161,921,426 states generated (3,435,246 s/min), 50,286,533 distinct states found (783,981 ds/min), 45,148,513 states left on queue.
+Progress(10) at 2026-11-05 21:17:10: 165,071,612 states generated (3,150,186 s/min), 51,060,300 distinct states found (773,767 ds/min), 45,868,146 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 21:18:10)
+Progress(10) at 2026-11-05 21:18:10: 168,536,198 states generated (3,464,586 s/min), 51,836,854 distinct states found (776,554 ds/min), 46,583,099 states left on queue.
+Progress(10) at 2026-11-05 21:19:10: 171,878,272 states generated (3,342,074 s/min), 52,660,126 distinct states found (823,272 ds/min), 47,345,873 states left on queue.
+Progress(10) at 2026-11-05 21:20:10: 175,219,826 states generated (3,341,554 s/min), 53,370,215 distinct states found (710,089 ds/min), 47,998,400 states left on queue.
+Progress(10) at 2026-11-05 21:21:10: 178,661,198 states generated (3,441,372 s/min), 54,140,550 distinct states found (770,335 ds/min), 48,707,236 states left on queue.
+Progress(10) at 2026-11-05 21:22:10: 182,184,251 states generated (3,523,053 s/min), 54,884,260 distinct states found (743,710 ds/min), 49,394,649 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 21:23:11)
+Progress(10) at 2026-11-05 21:23:11: 185,671,566 states generated (3,487,315 s/min), 55,586,940 distinct states found (702,680 ds/min), 50,039,363 states left on queue.
+Progress(10) at 2026-11-05 21:24:11: 189,061,885 states generated (3,390,319 s/min), 56,265,722 distinct states found (678,782 ds/min), 50,659,281 states left on queue.
+Progress(10) at 2026-11-05 21:25:11: 192,586,337 states generated (3,524,452 s/min), 56,947,425 distinct states found (681,703 ds/min), 51,280,812 states left on queue.
+Progress(10) at 2026-11-05 21:26:11: 196,273,449 states generated (3,687,112 s/min), 57,611,741 distinct states found (664,316 ds/min), 51,888,283 states left on queue.
+Progress(10) at 2026-11-05 21:27:11: 200,018,154 states generated (3,744,705 s/min), 58,222,077 distinct states found (610,336 ds/min), 52,439,635 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 21:28:11)
+Progress(10) at 2026-11-05 21:28:11: 203,284,862 states generated (3,266,708 s/min), 58,722,708 distinct states found (500,631 ds/min), 52,886,920 states left on queue.
+Progress(10) at 2026-11-05 21:29:11: 206,898,805 states generated (3,613,943 s/min), 59,192,352 distinct states found (469,644 ds/min), 53,298,370 states left on queue.
+Progress(10) at 2026-11-05 21:30:11: 210,399,038 states generated (3,500,233 s/min), 59,731,440 distinct states found (539,088 ds/min), 53,767,357 states left on queue.
+Progress(10) at 2026-11-05 21:31:11: 213,637,625 states generated (3,238,587 s/min), 60,482,071 distinct states found (750,631 ds/min), 54,442,433 states left on queue.
+Progress(10) at 2026-11-05 21:32:11: 217,015,253 states generated (3,377,628 s/min), 61,148,091 distinct states found (666,020 ds/min), 55,034,602 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 21:33:11)
+Progress(10) at 2026-11-05 21:33:11: 220,351,561 states generated (3,336,308 s/min), 61,794,161 distinct states found (646,070 ds/min), 55,606,318 states left on queue.
+Progress(10) at 2026-11-05 21:34:11: 223,465,684 states generated (3,114,123 s/min), 62,619,867 distinct states found (825,706 ds/min), 56,377,055 states left on queue.
+Progress(10) at 2026-11-05 21:35:11: 226,763,462 states generated (3,297,778 s/min), 63,388,535 distinct states found (768,668 ds/min), 57,088,067 states left on queue.
+Progress(10) at 2026-11-05 21:36:11: 230,000,070 states generated (3,236,608 s/min), 64,208,362 distinct states found (819,827 ds/min), 57,849,140 states left on queue.
+Progress(10) at 2026-11-05 21:37:11: 233,330,369 states generated (3,330,299 s/min), 64,984,588 distinct states found (776,226 ds/min), 58,565,249 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 21:38:11)
+Progress(10) at 2026-11-05 21:38:11: 236,401,528 states generated (3,071,159 s/min), 65,766,228 distinct states found (781,640 ds/min), 59,293,533 states left on queue.
+Progress(10) at 2026-11-05 21:39:11: 239,797,174 states generated (3,395,646 s/min), 66,531,513 distinct states found (765,285 ds/min), 59,997,552 states left on queue.
+Progress(10) at 2026-11-05 21:40:11: 242,588,171 states generated (2,790,997 s/min), 67,176,214 distinct states found (644,701 ds/min), 60,591,802 states left on queue.
+Progress(10) at 2026-11-05 21:41:11: 245,964,069 states generated (3,375,898 s/min), 67,934,244 distinct states found (758,030 ds/min), 61,291,629 states left on queue.
+Progress(10) at 2026-11-05 21:42:11: 249,402,434 states generated (3,438,365 s/min), 68,676,612 distinct states found (742,368 ds/min), 61,978,078 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 21:43:11)
+Progress(10) at 2026-11-05 21:43:11: 252,799,737 states generated (3,397,303 s/min), 69,389,437 distinct states found (712,825 ds/min), 62,632,881 states left on queue.
+Progress(10) at 2026-11-05 21:44:11: 256,026,081 states generated (3,226,344 s/min), 70,078,650 distinct states found (689,213 ds/min), 63,265,635 states left on queue.
+Progress(10) at 2026-11-05 21:45:11: 259,142,812 states generated (3,116,731 s/min), 70,667,728 distinct states found (589,078 ds/min), 63,802,176 states left on queue.
+Progress(10) at 2026-11-05 21:46:11: 262,569,129 states generated (3,426,317 s/min), 71,352,070 distinct states found (684,342 ds/min), 64,427,749 states left on queue.
+Progress(10) at 2026-11-05 21:47:11: 266,161,893 states generated (3,592,764 s/min), 71,966,908 distinct states found (614,838 ds/min), 64,986,057 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 21:48:11)
+Progress(10) at 2026-11-05 21:48:11: 269,797,220 states generated (3,635,327 s/min), 72,564,527 distinct states found (597,619 ds/min), 65,528,016 states left on queue.
+Progress(10) at 2026-11-05 21:49:11: 273,428,674 states generated (3,631,454 s/min), 73,081,157 distinct states found (516,630 ds/min), 65,988,878 states left on queue.
+Progress(10) at 2026-11-05 21:50:11: 277,052,632 states generated (3,623,958 s/min), 73,505,090 distinct states found (423,933 ds/min), 66,353,562 states left on queue.
+Progress(10) at 2026-11-05 21:51:11: 280,269,399 states generated (3,216,767 s/min), 74,229,330 distinct states found (724,240 ds/min), 67,003,226 states left on queue.
+Progress(10) at 2026-11-05 21:52:11: 283,512,353 states generated (3,242,954 s/min), 74,987,077 distinct states found (757,747 ds/min), 67,685,541 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 21:53:11)
+Progress(10) at 2026-11-05 21:53:11: 285,847,825 states generated (2,335,472 s/min), 75,515,581 distinct states found (528,504 ds/min), 68,160,152 states left on queue.
+Progress(10) at 2026-11-05 21:54:11: 289,064,148 states generated (3,216,323 s/min), 76,152,206 distinct states found (636,625 ds/min), 68,729,169 states left on queue.
+Progress(10) at 2026-11-05 21:55:11: 292,416,293 states generated (3,352,145 s/min), 76,730,888 distinct states found (578,682 ds/min), 69,237,087 states left on queue.
+Progress(10) at 2026-11-05 21:56:11: 295,856,348 states generated (3,440,055 s/min), 77,270,356 distinct states found (539,468 ds/min), 69,708,008 states left on queue.
+Progress(10) at 2026-11-05 21:57:11: 299,051,035 states generated (3,194,687 s/min), 77,984,537 distinct states found (714,181 ds/min), 70,347,182 states left on queue.
+Checkpointing of run states/26-11-05-20-02-55.270/
+Checkpointing completed at (2026-11-05 21:58:11)
+Progress(10) at 2026-11-05 21:58:11: 302,153,255 states generated (3,102,220 s/min), 78,710,181 distinct states found (725,644 ds/min), 71,001,245 states left on queue.
+Progress(10) at 2026-11-05 21:59:11: 305,516,494 states generated (3,363,239 s/min), 79,379,899 distinct states found (669,718 ds/min), 71,599,507 states left on queue.
+Progress(10) at 2026-11-05 22:00:12: 308,896,950 states generated (3,380,456 s/min), 80,013,294 distinct states found (633,395 ds/min), 72,161,315 states left on queue.
+Progress(10) at 2026-11-05 22:01:12: 312,334,935 states generated (3,437,985 s/min), 80,618,673 distinct states found (605,379 ds/min), 72,693,953 states left on queue.
+Progress(10) at 2026-11-05 22:02:12: 315,515,620 states generated (3,180,685 s/min), 81,246,847 distinct states found (628,174 ds/min), 73,250,831 states left on queue.

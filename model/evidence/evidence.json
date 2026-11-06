@@ -1,0 +1,313 @@
+{
+ "authorization": "2026-11-05 13:49 IST; BL1 APPROVED/CLOSED for model baseline text; L0-01..L0-19 COMPLETED for this run",
+ "authorized_configuration": "(Alternative A, FC-1, prospective, n/a, specified-test, Convention A, boolean-quorumLost, NORMAL/NEGATIVE-CONTROL/CRASH/PARTITION, 4 validators, heights 0..4)",
+ "diagnostics": [
+  {
+   "depth": 13,
+   "distinct": 70023125,
+   "max_h": 3,
+   "max_steps": 16,
+   "name": "GAP-PREFIX BFS (full spec)",
+   "queued": 53286386,
+   "record": "raw-output-diag/RUN_LOG.txt",
+   "result": "INCOMPLETE",
+   "status": "superseded by TRACE-S"
+  },
+  {
+   "distinct": 14762200,
+   "generated": 102324435,
+   "name": "GAP-PREFIX dfid (full spec)",
+   "record": "raw-output-diag/GAP-PREFIX-dfid.txt",
+   "result": "INCOMPLETE_KILLED_BY_RESTART",
+   "status": "superseded by TRACE-S"
+  },
+  {
+   "depth": 14,
+   "distinct": 28715573,
+   "name": "GAP-PREFIX-VARIANT BFS",
+   "queued": 17627946,
+   "record": "raw-output-diag/GAP-PREFIX-VARIANT.txt",
+   "result": "INCOMPLETE_TIMEOUT",
+   "status": "superseded by TRACE-S"
+  },
+  {
+   "date": "2026-11-06 07:07 IST",
+   "depth": 15,
+   "distinct": 25215,
+   "duration_s": 15,
+   "exit": 75,
+   "generated": 273835,
+   "name": "TRACE-S constrained",
+   "record": "raw-output-diag/TRACE-S.txt",
+   "result": "ERROR_SelectedTipId_CHOOSE_unsatisfiable",
+   "trace": "MarwantaDiag_TTrace_1793929019.tla"
+  },
+  {
+   "date": "2026-11-06 07:22:06 IST",
+   "depth": 11,
+   "distinct": 5766289,
+   "duration_s": 853,
+   "exit": 0,
+   "fp_collision": {
+    "actual": 4.3e-07,
+    "optimistic": 8e-06
+   },
+   "generated": 31239470,
+   "name": "NORMAL-NoFinal-VARIANT",
+   "note": "Variant spec + NORMAL@10 + NoFinal invariant (finalSet={GenesisId}) + 16 base invariants. NoFinal PASSED: no non-genesis finalisation reachable at @10 — empirical confirmation of the @10 vacuity claim. By the subset argument this holds for the full spec too.",
+   "record": "raw-output-diag/NORMAL-NoFinal-VARIANT.txt",
+   "result": "PASS_COMPLETE_NoFinal_holds"
+  },
+  {
+   "date": "2026-11-06 15:11:11 IST",
+   "depth": 16,
+   "distinct": 31637,
+   "duration_s": 28,
+   "exit": 12,
+   "generated": 351990,
+   "name": "TRACE-S A17 (fixed spec)",
+   "note": "Founder-authorized Option A fix (r.id = t self-exclusion). IPrefix VIOLATED in 15 actions: h2 finalises, h1 never qualifies. Q-M1 DECIDED: Alternative A does NOT guarantee I-Prefix. Other 6 invariants in the config held on the 31,637 explored states (bounded diagnostic).",
+   "record": "raw-output-diag/TRACE-S-A17.txt",
+   "result": "FAILED_IPrefix",
+   "trace": "MarwantaDiag_TTrace_1793958042.tla"
+  },
+  {
+   "name": "GAP-PREFIX-VARIANT-noIPrefix",
+   "note": "A17 spec, IPrefix removed so TLC continues past the known A17 violation. Killed by runtime restart after ~26 min at 10.0M distinct, depth 13. No violation, no CHOOSE error in explored states. SUPERSEDED by A18; will not be re-run on A17. The A17 tie question is closed by the A18 rank tie-breaker + proof. Gap-edge IPrefix remains OPEN (see report).",
+   "record": "raw-output-diag/GAP-PREFIX-VARIANT-noIPrefix.txt",
+   "result": "INCOMPLETE_KILLED_BY_RESTART",
+   "distinct": 10048953,
+   "generated": 54248552,
+   "depth": 13
+  },
+  {
+   "date": "2026-11-06 15:28:50 IST",
+   "depth": 17,
+   "distinct": 53586,
+   "duration_s": 62,
+   "exit": 0,
+   "fp_collision": {
+    "actual": 1.1e-10,
+    "optimistic": 1.5e-09
+   },
+   "generated": 569719,
+   "name": "TRACE-S A18",
+   "note": "Genesis base case + IdRank tie-breaker. Complete constrained run: all 7 invariants hold, IPrefix HOLDS. The A17 IPrefix violation is gone.",
+   "record": "raw-output-diag/TRACE-S-A18.txt",
+   "result": "PASS_COMPLETE"
+  },
+  {
+   "date": "2026-11-06 15:29:47 IST",
+   "distinct": 34278,
+   "duration_s": 37,
+   "exit": 12,
+   "generated": 366686,
+   "name": "TRACE-S-BothFinal A18",
+   "note": "NotBothFinalised invariant violated as EXPECTED: violation trace (16 states, steps 0..15) ends with finalSet={genesis,h1,h2}, finalisedCounter=2 — positive proof h1 and h2 finalise consecutively.",
+   "record": "raw-output-diag/TRACE-S-BothFinal-A18.txt",
+   "result": "EXPECTED_VIOLATION_PROVES_h1_h2_FINALISED",
+   "trace": "MarwantaDiag_TTrace_1793959150.tla"
+  },
+  {
+   "date": "2026-11-06 19:04:59 IST",
+   "depth": 16,
+   "distinct": 164701,
+   "duration_s": 93,
+   "exit": 12,
+   "generated": 1444181,
+   "name": "GAP-TRACE A18",
+   "note": "Single gap transition (h1 view 1 -> g height 2 view 3, skipping view 2, attestations + formed GapCert). IPrefix VIOLATED: g finalises while parent h1 lacks a QC (gap cert substitutes for parent QC); finalSet={genesis,g}. Second IPrefix hole, distinct from the A17 consecutive hole. Freeze HELD. Variant (b) NoParentQC not run — subsumed (the (a) trace already has no votes on h1).",
+   "record": "raw-output-diag/GAP-TRACE-A18.txt",
+   "result": "FAILED_IPrefix",
+   "trace": "MarwantaDiag_TTrace_1793972006.tla"
+  },
+  {
+   "date": "2026-11-06 19:41:21 IST",
+   "depth": 21,
+   "distinct": 688550,
+   "duration_s": 273,
+   "exit": 0,
+   "fingerprint": {
+    "actual": 1.8e-08
+   },
+   "generated": 6836367,
+   "name": "GAP-TRACE A19",
+   "note": "Option B prefix gate (A19). First attempt killed by runtime restart at 333,561 distinct, depth 18, no violation; its checkpoint lacked vars.chkpt and was unusable. Fresh re-run COMPLETE: all 7 invariants hold on the complete constrained gap space. The gap-edge IPrefix hole is CLOSED.",
+   "record": "raw-output-diag/GAP-TRACE-A19.txt",
+   "result": "PASS_COMPLETE"
+  },
+  {
+   "date": "2026-11-06 19:41:57 IST",
+   "depth": 17,
+   "distinct": 53586,
+   "duration_s": 30,
+   "exit": 0,
+   "fingerprint": {
+    "actual": 2.8e-10
+   },
+   "generated": 569719,
+   "name": "TRACE-S A19",
+   "note": "Prefix gate changes nothing on the consecutive main-chain space (same distinct count as A18, 53,586). All 7 invariants hold; IPrefix HOLDS.",
+   "record": "raw-output-diag/TRACE-S-A19.txt",
+   "result": "PASS_COMPLETE"
+  },
+  {
+   "date": "2026-11-06 19:42:17 IST",
+   "duration_s": 19,
+   "exit": 12,
+   "name": "TRACE-S-BothFinal A19",
+   "note": "NotBothFinalised invariant violated as EXPECTED: violation trace ends with finalSet={genesis,h1,h2}, finalisedCounter=2, 15 actions — positive proof h1 and h2 still finalise consecutively under A19.",
+   "record": "raw-output-diag/TRACE-S-BothFinal-A19.txt",
+   "result": "EXPECTED_VIOLATION_PROVES_h1_h2_FINALISED",
+   "trace": "MarwantaDiag_TTrace_1793974318.tla"
+  }
+ ],
+ "frozen_verification_2026_11_06": {
+  "authorized_spec": {
+   "lines": 922,
+   "md5": "47fd0e5a1c2ccfabcad9502ca5ce2353",
+   "status": "CHANGED by founder-authorized A19 fix only (A18 was 890 lines, md5 f7b081fbedfa248afa052725791728a2)"
+  },
+  "blueprint_reissue": {
+   "lines": 1495,
+   "status": "UNCHANGED"
+  },
+  "invariant_traceability_matrix": {
+   "lines": 107,
+   "status": "UNCHANGED"
+  },
+  "proof_closure_plan": {
+   "lines": 1674,
+   "status": "UNCHANGED"
+  },
+  "prototype_local_evidence_json": {
+   "md5": "377667a419d2e589c72628df8e89e45a",
+   "status": "UNTOUCHED"
+  },
+  "v0.4": {
+   "lines": 1858,
+   "md5": "1b1011cbaca466eb52c897af519a0373",
+   "status": "UNCHANGED"
+  }
+ },
+ "key_findings": [
+  "SelectedTipId CHOOSE unsatisfiable (machine-confirmed by TRACE-S) — FIXED by founder-authorized Option A (r.id = t self-exclusion), A17, 2026-11-06.",
+  "A14 minimum-finalisation count corrected: 13 actions to first attempt, 15 to completion (not 10).",
+  "@10 family PASSes are VACUOUS for finalisation (finalSet={genesis} throughout); they verify non-finalisation behaviour only. Neither fix changes anything at MaxSteps=10.",
+  "Q-M1 DECIDED under A17 (TRACE-S, exit 12, 15-action trace): Alternative A as written did NOT guarantee I-Prefix — h2 finalised while h1 never qualified (genesis can never hold a QC, so EdgeGated(h1) was always false).",
+  "A18 (founder-authorized, 2026-11-06): EdgeGated genesis base case (ParentId(b) = GenesisId) + IdRank tie-breaker (literal r.id < t.id is UNEVALUABLE in TLC, exit 75 — IDs are records; rank form is the faithful translation, provably vacuous as a deciding comparison). TRACE-S A18: complete, exit 0, IPrefix HOLDS on the main-chain subspace (53,586 distinct). BothFinalised-negation trace PROVES h1+h2 finalise consecutively (finalSet={genesis,h1,h2}, 15 actions).",
+  "GAP-TRACE A18 (2026-11-06, exit 12, 17-state trace): SECOND IPrefix hole — a gap-certified edge lets g finalise while parent h1 lacks a QC, because GapCertForEdge substitutes for the parent QC; eager FinaliseStep leaves h1 unfinalised. Freeze HELD pending a founder decision on a protocol fix.",
+  "NEGATIVE-CONTROL re-run INCOMPLETE (134.6M distinct, no violation) — disk-throughput collapse on this VM.",
+  "Item 9: SETTLEMENT-SAFETY CLAIM WITHHELD pending the C1-C4 mandatory verification blocker.",
+  "A19 (Option B, founder decision 2026-11-06 19:32 IST): prefix gate on finalisation — Qualifying(b) requires PrefixOK(b), every ancestor finalised or qualifying in the same step (AncestorQualifies inlines the qualification conjuncts; Ancestors(b) is transitively closed). Option A REJECTED as incomplete (h1 needs the gap cert via ChildOK, so the 'cert not yet formed' ordering would still violate IPrefix). EdgeGated UNCHANGED.",
+  "GAP-TRACE A19 (2026-11-06, exit 0, COMPLETE, 688,550 distinct): gap-edge IPrefix hole CLOSED. TRACE-S A19 (exit 0, COMPLETE, 53,586 distinct): main-chain IPrefix still HOLDS. BothFinal A19 (exit 12, expected): h1+h2 consecutive-finalisation proof re-verified (finalSet={genesis,h1,h2}, 15 actions). FREEZE 2026-11-06 19:42 IST: spec A19 + evidence package FROZEN; repository packaging may proceed."
+ ],
+ "non_claims": [
+  "No obligation (53), assumption (34), or blocker beyond BL1 text closure is closed by these runs.",
+  "No general proof, no real-world/crypto/performance/testnet/mainnet/token claim.",
+  "INCOMPLETE runs are not passes; the TRACE-S outcome is a spec-defect error, not a pass or an invariant violation."
+ ],
+ "report": "MODEL_EVIDENCE_REPORT.md",
+ "runs": [
+  {
+   "date": "2026-11-05 15:43:37 IST",
+   "depth": 11,
+   "distinct": 26131926,
+   "exit": 0,
+   "family": "NORMAL",
+   "fp_collision": {
+    "actual": 1.9e-05,
+    "optimistic": 1.3e-05
+   },
+   "generated": 35047573,
+   "max_steps": 10,
+   "queued": 0,
+   "record": "raw-output-10/NORMAL-resume.txt",
+   "result": "PASS_COMPLETE_VACUOUS_FOR_FINALISATION"
+  },
+  {
+   "date": "2026-11-05 18:50:40 IST",
+   "depth": 11,
+   "distinct": 73920868,
+   "exit": 0,
+   "family": "CRASH",
+   "fp_collision": {
+    "actual": 7.9e-05,
+    "optimistic": 0.00013
+   },
+   "generated": 106402662,
+   "max_steps": 10,
+   "queued": 0,
+   "record": "raw-output-10/CRASH-resume3.txt",
+   "result": "PASS_COMPLETE_VACUOUS_FOR_FINALISATION"
+  },
+  {
+   "date": "2026-11-05 20:02:43 IST",
+   "depth": 11,
+   "distinct": 35407506,
+   "exit": 0,
+   "family": "PARTITION",
+   "fp_collision": {
+    "actual": 2e-05,
+    "optimistic": 0.00031
+   },
+   "generated": 196491318,
+   "max_steps": 10,
+   "queued": 0,
+   "record": "raw-output-10/PARTITION.txt",
+   "result": "PASS_COMPLETE_VACUOUS_FOR_FINALISATION"
+  },
+  {
+   "date": "2026-11-05 15:49 IST",
+   "depth": 8,
+   "distinct": 3537685,
+   "exit": 12,
+   "family": "NEGATIVE-CONTROL",
+   "generated": 16936879,
+   "max_steps": 10,
+   "queued": 3046429,
+   "record": "raw-output-10/NEGATIVE-CONTROL.txt",
+   "result": "FAILED_NoExit",
+   "spec": "old 772-line",
+   "trace": "7-state counterexample (see report E-M2)"
+  },
+  {
+   "checkpoint": "states/26-11-05-20-02-55.270 (45 GB)",
+   "distinct": 134608561,
+   "family": "NEGATIVE-CONTROL",
+   "max_steps": 10,
+   "queued": 123261924,
+   "record": "raw-output-10/RUN_LOG.txt",
+   "result": "INCOMPLETE",
+   "spec": "A16 fixed",
+   "violation": false
+  },
+  {
+   "depth": 9,
+   "distinct": 9822896,
+   "family": "NORMAL@12",
+   "generated": 45634159,
+   "record": "raw-output/NORMAL.txt",
+   "result": "INCOMPLETE"
+  },
+  {
+   "depth": 10,
+   "distinct": 9254684,
+   "family": "CRASH@9",
+   "generated": 38352539,
+   "record": "raw-output-9/CRASH.txt",
+   "result": "INCOMPLETE"
+  }
+ ],
+ "spec": {
+  "file": "Marwanta.tla",
+  "lines": 922,
+  "md5": "47fd0e5a1c2ccfabcad9502ca5ce2353",
+  "version": "A19"
+ },
+ "tooling": {
+  "jar": "phase2-tlc-verification/tla2tools.jar",
+  "java": "Temurin JRE 17.0.21",
+  "tlc": "2026.10.30.154139"
+ }
+}
