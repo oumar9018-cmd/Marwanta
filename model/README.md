@@ -1,7 +1,8 @@
 # MARWANTA — TLA+ Model (Authorized Configuration Only, Frozen A19)
 
 **Authorization:** Approval Record 2026-11-05
-(`model/evidence/MODEL_EVIDENCE_REPORT.md`, E-M1).
+(`model/authorization/MARWANTA_MODEL_AUTHORIZATION_APPROVAL_RECORD.md`,
+decision log in `model/authorization/MARWANTA_L0_DECISION_SHEET.md`).
 Authorized configuration: (Alternative A, FC-1, prospective, n/a,
 specified-test, Convention A, boolean-quorumLost,
 NORMAL / NEGATIVE-CONTROL / CRASH / PARTITION families,
