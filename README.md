@@ -9,6 +9,25 @@ This repository is the frozen public record of the protocol design and its
 machine-checked model. It is research, not a product. There is no testnet,
 no mainnet, and no token.
 
+## What is MARWANTA, and what problem does it solve?
+
+**The problem, in one line:** on today's blockchains, execution and
+settlement are coupled — one faulty application can halt or corrupt shared
+state, and an operation that touches several applications cannot be
+guaranteed all-or-nothing without heavy coordination.
+
+**MARWANTA's answer (a research hypothesis, not a proven result):** split
+execution into isolated, deterministic, capability-bounded domains, make
+every transaction carry its own proof, and settle on a shared layer that
+applies cross-domain operations atomically or not at all — so a fault in
+one domain stays in that domain, and a validator never finalises a block
+it has not fully replayed.
+
+**What this repo proves so far:** the consensus core of that design is
+machine-checked in TLA+ (see Status below). What it does **not** prove:
+that the full design works in production, performs, or is safe at scale.
+That is what the funding is for.
+
 ## Status — read this first
 
 | Item | State |
@@ -38,12 +57,19 @@ including every limitation, is in `model/evidence/MODEL_EVIDENCE_REPORT.md`.
 ```
 spec/       Architecture specification v0.4 (frozen draft, 1,858 lines)
 model/      TLA+ model, spec A19 (frozen) + diagnostic variant
+  authorization/  L0 decision log, authorization sheet + approval record
   configs/  Family + diagnostic run configs
   evidence/ Evidence report, evidence.json, fidelity matrix
   traces/   Counterexample / proof traces produced by TLC
 prototype-local/  §4 minimum local prototype (frozen as evidence)
 docs/       Funding needs plan ($5,000–$10,000, milestone tranches)
+ROADMAP.md  What happens next, in funding-tranche order (gates named)
+.github/workflows/  TLA+ syntax check (SANY) on every spec change
 ```
+
+Frozen evidence files may reference the author's local workspace paths
+(e.g. `~/workspace/...`); those are part of the frozen record, not links.
+Nothing frozen has been edited for this repository.
 
 ## How to verify
 
@@ -69,6 +95,18 @@ MARWANTA needs funding for the next step: servers for testing that this
 workstation cannot run, plus operating costs. The ask is **$5,000–$10,000**,
 released in three milestone tranches. Full breakdown:
 `docs/MARWANTA_FUNDING_NEEDS_PLAN.md`.
+
+## Team
+
+- **Founder — [@oumar9018-cmd](https://github.com/oumar9018-cmd):**
+  protocol design, architecture, and every decision in this repository.
+- **Engineering — Muse (Meta's AI agent):** the TLA+ model (A19), the
+  verification runs, the evidence package, the prototype, and this
+  repository — built with the founder, under his direction.
+
+The team is small by design at this stage: the funding buys compute and
+an independent review, not headcount. Co-builders are welcome once the
+verification milestone is done — see `ROADMAP.md`.
 
 ## Contact
 
