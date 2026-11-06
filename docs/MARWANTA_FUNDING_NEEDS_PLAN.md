@@ -87,48 +87,32 @@ Two budgets, each adding up exactly
 
 Recommended plan - $10,000 for about 9 months
 
- Item                           Basis                                          Amount
+| Item | Basis | Amount |
+|---|---|---:|
+| 4 validator servers | About $70/month each x 9 months | $2,520 |
+| 1 heavy verification server | About $150/month x 9 months | $1,350 |
+| Monitoring / status server | About $30/month x 9 months | $270 |
+| Storage and backups | About $25/month x 9 months | $225 |
+| Domain, tools and software | Domain, email, dev tools, hosting | $280 |
+| Legal, registration and fees | Entity, accounting, application fees | $800 |
+| Independent external review | One paid outside review of spec and evidence | $1,500 |
+| Founder operations stipend | $200/month x 9 months, capped | $1,800 |
+| Demo and application costs | Presentations, travel for meetings | $300 |
+| Contingency reserve | Price rises, one server replacement | $955 |
+| **Total - recommended plan** | | **$10,000** |
 
- 4 validator servers            About $70/month each x 9 months                 $2,520
-
- 1 heavy verification server    About $150/month x 9 months                     $1,350
-
- Monitoring / status server     About $30/month x 9 months                       $270
-
- Storage and backups            About $25/month x 9 months                       $225
-
- Domain, tools and software     Domain, email, dev tools, hosting                $280
-
- Legal, registration and fees   Entity, accounting, application fees             $800
-
- Independent external review    One paid outside review of spec and evidence    $1,500
-
- Founder operations stipend     $200/month x 9 months, capped                   $1,800
-
- Demo and application costs     Presentations, travel for meetings               $300
-
- Contingency reserve            Price rises, one server replacement              $955
-
- Total - recommended plan                                                      $10,000
 Lean plan - $5,000 for about 6 months
 
-  Item                                                    Basis                                                       Amount
-
-  4 validator servers (smaller class)                     About $45/month each x 6 months                               $1,080
-
-  Heavy verification server (burst rental)                About $120/month x 6 months                                     $720
-
-  Monitoring server + storage                             About $35/month x 6 months combined                             $210
-
-  Domain, tools and fees                                  Essentials only                                                 $550
-
-  External review (limited scope)                         One narrow review, not full scope                               $600
-
-  Founder operations stipend                              $200/month x 6 months, capped                                 $1,200
-
-  Contingency reserve                                     Small buffer only                                               $640
-
-  Total - lean plan                                                                                                     $5,000
+| Item | Basis | Amount |
+|---|---|---:|
+| 4 validator servers (smaller class) | About $45/month each x 6 months | $1,080 |
+| Heavy verification server (burst rental) | About $120/month x 6 months | $720 |
+| Monitoring server + storage | About $35/month x 6 months combined | $210 |
+| Domain, tools and fees | Essentials only | $550 |
+| External review (limited scope) | One narrow review, not full scope | $600 |
+| Founder operations stipend | $200/month x 6 months, capped | $1,200 |
+| Contingency reserve | Small buffer only | $640 |
+| **Total - lean plan** | | **$5,000** |
 
 Server unit prices are planning estimates in the range of current public pricing for this server class, not live quotations; the
 contingency line exists precisely because prices move. The lean plan works, but it drops the full external review and leaves
@@ -139,23 +123,12 @@ Money is released only against finished work
 No funder should hand over $10,000 on a promise. This plan splits the recommended amount into three
 tranches, each unlocked by a deliverable anyone can check.
 
- Tranche                    Amount      Unlocked by
-
- 1 - Set up and finish        $3,500    Available at start. Spent on servers and setup. Reported when: all five
- the big runs                           servers are live, and the unfinished NEGATIVE-CONTROL run is
-                                        completed on the heavy server with its full result published.
-
- 2 - Prove it on              $3,500    Unlocked by Tranche 1 report. Reported when: crash and partition test
- separate machines                      families are re-run across the four separate validator servers, with logs
-                                        and evidence published in the public repository.
-
- 3 - Independent              $3,000    Unlocked by Tranche 2 report. Reported when: the independent
- check and next-step                    external review is delivered, and a written next-step pack states - with
- pack                                   costs - what a prototype phase would need, for a separate founder
-                                        and funder decision.
-
- Total                      $10,000     If a tranche's report is not delivered, the next tranche does not
-                                        start.
+| Tranche | Amount | Unlocked by |
+|---|---|---|
+| 1 - Set up and finish the big runs | $3,500 | Available at start. Spent on servers and setup. Reported when: all five servers are live, and the unfinished NEGATIVE-CONTROL run is completed on the heavy server with its full result published. |
+| 2 - Prove it on separate machines | $3,500 | Unlocked by Tranche 1 report. Reported when: crash and partition test families are re-run across the four separate validator servers, with logs and evidence published in the public repository. |
+| 3 - Independent check and next-step pack | $3,000 | Unlocked by Tranche 2 report. Reported when: the independent external review is delivered, and a written next-step pack states - with costs - what a prototype phase would need, for a separate founder and funder decision. |
+| **Total** | **$10,000** | If a tranche's report is not delivered, the next tranche does not start. |
 
 How the chances of funding go up
 
