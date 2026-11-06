@@ -1,5 +1,7 @@
 # MARWANTA
 
+[![TLA+ syntax check](https://github.com/oumar9018-cmd/Marwanta/actions/workflows/sany.yml/badge.svg)](https://github.com/oumar9018-cmd/Marwanta/actions/workflows/sany.yml)
+
 **MARWANTA is an independent Layer-1 blockchain under research.**
 Thesis: **Proof-Carrying, Fault-Isolated Execution** — isolated, deterministic,
 capability-bounded execution domains; proof-carrying transactions; shared
